@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ <h2 id="title" style="color: blue;">Hello Night </h2>
+  
+  <!-- <button onclick="changeText()">Click to change </button>
+    <button onclick="reset()">Reset </button> -->
+
+  
+  <div style="display: flex;">
+    
+      <button class="colorSquare" id="red" value="red" style="height: 100px; width: 100px; background-color: red;">
+        <h4 style="size: 60px;">✊🏿</h4>
+        <div id="redClick">0</div>
+      </button>
+    
+      <button id="yellow" class="colorSquare" value="yellow" style="height: 100px; width: 100px; background-color: yellow;">
+        ✋🏿
+        <div id="yellowClick">0</div>
+      </button>
+      <button id="green" value="green" class="colorSquare" style="height: 100px; width: 100px; background-color: green;"> 
+      ✌️
+        <div id="greenClick">0</div>
+      </button>
+  </div>
+
+  <div>
+    <h3>Choice</h3>
+    <h4 id="choice"></h4>
+  </div>
+  <div>
+    <h3>Answer</h3>
+    <h4 id="answer"></h4>
+  </div>
+  <button id="reset" onclick="reset()">Reset</button>
+  
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>

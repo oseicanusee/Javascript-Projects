@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form action="" method="get" class="restaurant-bill">
+    
+      <div class="bill-total">
+        <label for="total">Bill total: </label>
+        <input type="text" name="total" id="total" onchange="totalAmount()" required>
+      </div>
+    
+      <div class="tip">
+        <label for="tip">Tip: </label>
+        <input type="text" name="tip" id="tip" onchange="tipCalc()" required>
+      </div>
+
+      <div style="border-color: red; border: solid;">
+          <div style="display: flex;">
+            People
+            <button id="minus" onclick="subtract()" type="button">
+              -
+            </button>
+            
+            <h3 id="people">
+              1
+            </h3>
+            
+            <button id="add" onclick="addPeople()" type="button">
+              +
+            </button>
+          </div>
+
+          <div>
+            Total Per Person
+            <h3 id="amount">0</h3>
+          </div>
+      </div>
+</form>
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
